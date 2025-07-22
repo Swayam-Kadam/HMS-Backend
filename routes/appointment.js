@@ -117,8 +117,8 @@ router.post("/create-checkout-session", async (req, res) => {
             payment_method_types: ["card"],
             line_items: lineItems,
             mode: "payment",
-            success_url: "http://localhost:3000/success",
-            cancel_url: "http://localhost:3000/unsuccess",
+            success_url: "https://hms-frontend-sigma.vercel.app//success",
+            cancel_url: "https://hms-frontend-sigma.vercel.app//unsuccess",
             metadata: {
                 user_email: appointment[0].email, // Store extra info in metadata
             },
